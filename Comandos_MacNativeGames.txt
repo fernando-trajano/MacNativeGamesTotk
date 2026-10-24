@@ -1,0 +1,30 @@
+# ==========================================
+# MAC NATIVE GAMES - TEMPLATES DE COMANDO
+# ==========================================
+# Guarde este arquivo. Se o site do 'Build Wizard' sair do ar,
+# substitua os caminhos entre colchetes [] pelos caminhos reais no seu Mac.
+
+# ------------------------------------------------
+# 1. ZELDA: TEARS OF THE KINGDOM / BREATH OF THE WILD (Apenas Jogo Base)
+# ------------------------------------------------
+python3.14 build_app.py "[CAMINHO_DO_JOGO.xci_OU_nsp]" -k "[CAMINHO_DAS_SUAS_PROD.KEYS]"
+
+Exemplo prático:
+python3.14 build_app.py "/Users/fernando/Downloads/Zelda/JogoBase.xci" -k "/Users/fernando/Downloads/Zelda/prod.keys"
+
+
+# ------------------------------------------------
+# 2. ZELDA: TEARS OF THE KINGDOM (Com arquivo de Update)
+# ------------------------------------------------
+python3.14 build_app.py "[CAMINHO_DO_JOGO.xci]" -k "[CAMINHO_DAS_SUAS_PROD.KEYS]" --update "[CAMINHO_DO_UPDATE.nsp]"
+
+Exemplo prático:
+python3.14 build_app.py "/Users/fernando/Downloads/Zelda/JogoBase.xci" -k "/Users/fernando/Downloads/Zelda/prod.keys" --update "/Users/fernando/Downloads/Zelda/Update.nsp"
+
+
+# ------------------------------------------------
+# DICAS IMPORTANTES DE USO
+# ------------------------------------------------
+1. Aspas: Mantenha sempre as aspas duplas ("") em volta dos caminhos. Elas evitam que o Terminal dê erro se houver espaços no nome das pastas.
+2. Copiar Caminho Rápido: No Finder, clique com o botão direito no arquivo (ex: a ROM), segure a tecla 'Option (⌥)' e selecione 'Copiar [nome do arquivo] como Caminho'.
+3. Onde rodar: Esse comando sempre deve ser colado no Terminal APÓS você ter entrado na pasta do repositório (usando o comando: cd MacNativeGames).
